@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+  
+        <div class="inputBox">
+          <input type="text" class="passBox" id="passBox" disabled />
+          <span class="material-icons" id="copyIcon">content_copy</span>
+        </div>
+  
+        <div class="row">
+          <p>Character Length</p>
+          <span id="sliderValue"></span>
+        </div>
+        <input type="range" min="0" max="10" value="8" id="inputSlider" />
+  
+  
+        
+        <div class="row" >
+            <input type="checkbox" name="uppercase" id="uppercase" onChange="myFunction(question_text_1, this)" >
+            <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        
+        <div class="row" >
+            <input type="checkbox" name="lowercase" id="lowercase"onChange="myFunction1(question_text_2, this)" >
+            <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+        <div class="row" >
+            <input type="checkbox" name="numbers" id="numbers"onChange="myFunction2(question_text_3, this)">
+            <label for="numbers">Include Numbers</label>
+        </div>
+  
+        <div class="row" >
+            <input type="checkbox" name="symbols" id="symbols" onChange="myFunction3(question_text_4, this)" >
+            <label for="symbols">Include Symbols</label>
+        </div>
+       
+        <div class="containers">
+        <p id="pass">STRENGTH</p> 
+          <div class="item item1" id="question_text_1"></div>
+          <div class="item item2" id="question_text_2"></div>
+          <div class="item item3" id="question_text_3"></div>
+          <div class="item item4" id="question_text_4"></div>
+          
+      </div>
+          
+  
+
+        <button type="button" class="genBtn" id="genBtn">
+          GENERATE
+        </button>
+    
+
+
+    </div>
+  
+      <script src="script.js"></script>
+   
+</body>
+</html>
